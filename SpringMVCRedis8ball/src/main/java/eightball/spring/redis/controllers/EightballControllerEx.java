@@ -45,25 +45,25 @@ private RedisServiceEx service;
 			}
 			else {
 				byte[] answer1 = "It is certain".getBytes();
-				byte[] answer2 = "It is decidedly so".getBytes();
+				byte[] answer2 = "Very good question.".getBytes();
 				byte[] answer3 = "Without a doubt".getBytes();
 				byte[] answer4 = "Yes definitely".getBytes();
-				byte[] answer5 = "You may rely on it".getBytes();
-				byte[] answer6 = "As I see it, yes".getBytes();
-				byte[] answer7 = "Most likely".getBytes();
+				byte[] answer5 = "You may rely on it, or not who knows.".getBytes();
+				byte[] answer6 = "Be assured, no one knows.".getBytes();
+				byte[] answer7 = "The chances are looking good.".getBytes();
 				byte[] answer8 = "Outlook good".getBytes();
 				byte[] answer9 = "Yes".getBytes();
-				byte[] answer10 = "Signs point to yes".getBytes();
-				byte[] answer11 = "Reply hazy try again".getBytes();
+				byte[] answer10 = "Follow your gut.".getBytes();
+				byte[] answer11 = "Yes, that's the way the cookie crumbles.".getBytes();
 				byte[] answer12 = "Ask again later".getBytes();
 				byte[] answer13 = "Better not tell you now".getBytes();
-				byte[] answer14 = "Cannot predict now".getBytes();
-				byte[] answer15 = "Concentrate and ask again".getBytes();
-				byte[] answer16 = "My reply is no".getBytes();
+				byte[] answer14 = "This can't be predicted at the moment.".getBytes();
+				byte[] answer15 = "That question doesn't make sense.".getBytes();
+				byte[] answer16 = "Not in this case".getBytes();
 				byte[] answer17 = "Don't count on it".getBytes();
-				byte[] answer18 = "My sources say no".getBytes();
-				byte[] answer19 = "Outlook not so good".getBytes();
-				byte[] answer20 = "Very doubtful".getBytes();
+				byte[] answer18 = "My sources say no, my sources are not very reliable though.".getBytes();
+				byte[] answer19 = "Ik heb geen glazen bol eh.".getBytes();
+				byte[] answer20 = "Doubt".getBytes();
 				service.sadd("answers",answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15,answer16,answer17,answer18,answer19,answer20);
 				answer = service.spop("answers");
 			}
