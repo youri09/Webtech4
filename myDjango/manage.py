@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import sys
+import json
 
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "exam.settings")
@@ -20,3 +21,10 @@ if __name__ == "__main__":
             )
         raise
     execute_from_command_line(sys.argv)
+
+
+    json_data = open('urlparts/static/infractions.json')
+    data1 = json.load(json_data) # deserialises it
+    data2 = json.dumps(data1) # json formatted string
+
+    json_data.close()
