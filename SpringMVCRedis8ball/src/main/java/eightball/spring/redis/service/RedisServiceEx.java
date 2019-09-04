@@ -113,5 +113,3 @@ public class RedisServiceEx {
 		return null;
 	}
 }
-
-}
