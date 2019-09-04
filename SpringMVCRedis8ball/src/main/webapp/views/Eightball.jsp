@@ -5,7 +5,7 @@
 <head>
 <link rel='stylesheet' href='/resources/css/bootstrap.min.css'>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Magic 8Ball</title>
 </head>
 <body>
 <div class='well'>

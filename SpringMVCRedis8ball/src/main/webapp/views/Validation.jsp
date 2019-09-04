@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Magic 8Ball</title>
 </head>
 <body>
 
-<h1>Succesvol toegevoegd!</h1>
+<h1>Successfully added!</h1>
 <p>Anwser: ${answer}</p>
 <br/><br/>
 <a href='/'>Go back</a>
