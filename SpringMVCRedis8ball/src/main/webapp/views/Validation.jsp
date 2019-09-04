@@ -8,8 +8,9 @@
 </head>
 <body>
 
-<h1>Successfully added!</h1>
-<p>Anwser: ${answer}</p>
+<h1>Anwser: ${answer}</h1>
+<h3>Successfully added!</h3>
+
 <br/><br/>
 <a href='/'>Go back</a>
 </body>
