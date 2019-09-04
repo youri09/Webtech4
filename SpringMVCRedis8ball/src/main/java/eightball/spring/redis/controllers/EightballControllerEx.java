@@ -1,5 +1,7 @@
 package eightball.spring.redis.controllers;
 
+import java.util.Arrays;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -36,6 +38,8 @@ private RedisServiceEx service;
 		
 		String questionString = question;
 		String answer;
+		
+		
 		if (service.getKey(questionString) != null) {
 			answer = service.getKey(questionString);
 		}
@@ -66,12 +70,18 @@ private RedisServiceEx service;
 				byte[] answer20 = "Very doubtful.".getBytes();
 				service.sadd("answers",answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15,answer16,answer17,answer18,answer19,answer20);
 				answer = service.spop("answers");
-			}			
+			}
+			
+			if(Arrays.asList(answer).contains(answer)){
+				answer = service.spop("answers");			
+			
+			}
 			service.setKey(question, answer);
 		}
 		
 		model.addAttribute("answer",answer);
 		return "Validation";
+		
 	}
 
 }
